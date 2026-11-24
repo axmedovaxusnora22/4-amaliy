@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aloqa — MahallaMarket</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <a class="logo" href="index.html">MahallaMarket</a>
+        <nav>
+            <a href="index.html">Bosh sahifa</a>
+            <a href="katalog.html">Mahsulotlar</a>
+            <a href="aloqa.html">Aloqa</a>
+            <button id="rejim" type="button">Tungi rejim</button>
+        </nav>
+    </header>
+
+    <main class="container section">
+        <h1>Biz bilan bog‘laning</h1>
+        <p class="muted">Savol yoki taklifingizni quyidagi forma orqali yuboring.</p>
+
+        <form id="aloqaForm" novalidate>
+            <label for="ism">Ismingiz</label>
+            <input type="text" id="ism" placeholder="Ismingizni kiriting">
+            <small id="ismXato" class="error"></small>
+
+            <label for="email">Email manzilingiz</label>
+            <input type="text" id="email" placeholder="example@mail.com">
+            <small id="emailXato" class="error"></small>
+
+            <label for="telefon">Telefon raqamingiz</label>
+            <input type="text" id="telefon" placeholder="+998XXXXXXXXX">
+            <small id="telefonXato" class="error"></small>
+
+            <label for="xabarMatni">Xabaringiz</label>
+            <textarea id="xabarMatni" rows="5" placeholder="Xabaringizni yozing"></textarea>
+            <small id="xabarXato" class="error"></small>
+
+            <button type="submit">Yuborish</button>
+            <p id="natija" class="success" aria-live="polite"></p>
+        </form>
+    </main>
+
+    <footer><p>© 2026 MahallaMarket</p></footer>
+    <script src="js/ui.js"></script>
+</body>
+</html>

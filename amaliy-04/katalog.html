@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahsulotlar — MahallaMarket</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <a class="logo" href="index.html">MahallaMarket</a>
+        <nav>
+            <a href="index.html">Bosh sahifa</a>
+            <a href="katalog.html">Mahsulotlar</a>
+            <a href="aloqa.html">Aloqa</a>
+            <button id="rejim" type="button">Tungi rejim</button>
+        </nav>
+    </header>
+
+    <main class="container section">
+        <h1>Mahsulotlar katalogi</h1>
+        <p class="muted">Mahsulotlarni qidiring, kategoriya tanlang yoki narx bo‘yicha saralang.</p>
+
+        <div class="filters">
+            <input type="search" id="qidiruv" placeholder="Mahsulot nomini qidiring..." aria-label="Mahsulot qidirish">
+            <select id="kategoriya" aria-label="Kategoriya tanlash">
+                <option value="all">Barcha kategoriyalar</option>
+                <option value="Oziq-ovqat">Oziq-ovqat</option>
+                <option value="Ichimliklar">Ichimliklar</option>
+                <option value="Gigiyena">Gigiyena</option>
+                <option value="Maishiy">Maishiy</option>
+            </select>
+            <select id="saralash" aria-label="Saralash">
+                <option value="default">Saralash</option>
+                <option value="asc">Narx: arzonidan qimmatiga</option>
+                <option value="desc">Narx: qimmatidan arzoniga</option>
+                <option value="name">Nom: A dan Z gacha</option>
+            </select>
+        </div>
+
+        <section id="statistika" class="stats" aria-live="polite"></section>
+        <p class="result-count">Ko‘rsatilayotgan mahsulotlar: <strong id="soni">0</strong></p>
+        <div id="mahsulotlar" class="product-grid"></div>
+        <p id="xabar" class="empty-message" aria-live="polite"></p>
+    </main>
+
+    <footer><p>© 2026 MahallaMarket</p></footer>
+    <script src="js/data.js"></script>
+    <script src="js/katalog.js"></script>
+    <script src="js/ui.js"></script>
+</body>
+</html>
